@@ -1,0 +1,112 @@
+*
+  box-sizing: border-box
+  outline: 0
+
+@media (max-width: 992px)
+  a, input, img, button
+    &:hover
+      cursor: default
+
+body
+  +reg
+  color: $main-text-color
+
+img
+  max-width: 100%
+
+//main > section, main .container
+//  border: 1px solid blueviolet
+//
+//main > section, body > div
+//  border: 1px solid red
+
+
+.container
+  width: $main-container-width
+  margin: auto
+
+/* Настройка тостера */
+.jq-toast-single
+  padding: 30px 0
+  background-color: $main-color-variation
+  font-size: 22px
+  line-height: 1.25
+
+
+.button
+  +bold
+  border-radius: 10px
+  background-color: $main-color
+  border: none
+  padding: 18px 30px
+  &:focus
+    outline: 0
+
+.section
+  &-title
+    font-size: 30px
+    line-height: 45px
+    +bold
+    text-align: center
+    max-width: 700px
+    margin: auto
+    color: $text-color-black
+  &-subtitle
+    +reg-100
+    display: block
+    font-size: 20px
+    color: $text-color-black
+.input
+  border: 1px solid $border-input
+  border-radius: 10px
+  padding: 20px 26px
+  font-size: 15px
+  line-height: 24px
+  color: $text-color-secondary
+  width: 100%
+  &:focus
+    border-color: $main-color
+    outline: $main-color
+
+  &.invalid
+    border: 1px solid red
+
+.phone
+  +bold
+  display: inline-block
+  text-decoration: none
+  color: $main-text-color
+
+.jump-btn
+  cursor: pointer
+  position: fixed
+  opacity: 80%
+  bottom: 10px
+  left: 10px
+  background-color: $main-color
+  border-radius: 50%
+  height: 56px
+  width: 56px
+  display: none
+  z-index: 1
+
+@media (max-width: $breakpoint-xl)
+  .container
+    width: 960px
+
+@media (max-width: $breakpoint-lg)
+  .container
+    width: 595px
+
+@media (max-width: $breakpoint-sm)
+  .container
+    width: 476px
+
+@media (max-width: $breakpoint-xs)
+  .container
+    width: 380px
+
+@media (max-width: $breakpoint-2xs)
+  .container
+    width: 320px
+

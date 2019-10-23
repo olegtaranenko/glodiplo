@@ -1,0 +1,92 @@
+.hero
+  //border: 1px solid blueviolet
+  height: 655px
+  margin-top: 20px
+  &-body
+    display: grid
+    grid-template: 50% 50% / repeat(3, 1fr)
+
+  //&-tile
+    //border: 1px lightgray solid
+
+  &-caramell
+    grid-column: 1 / span 2
+    order: -2
+    background: url("../../images/baby.png") no-repeat top left
+
+  &-ware
+    background: url("../../images/ware.png") no-repeat bottom right
+
+  &-bedlinen
+    background: url("../../images/bedlinen.png") no-repeat bottom left
+    //padding-right: 5px
+    margin-right: 10px
+
+  &-toyboxes
+    order: -1
+    grid-column: 3 / span 1
+    grid-row: 1 / span 2
+    background: url("../../images/toyboxes.png") no-repeat top right
+    margin-right: 5px
+
+
+@media (max-width: $breakpoint-xl)
+  .hero
+    &-toyboxes
+      background-position-y: bottom
+      margin-right: initial
+      margin-left: 15px
+    &-bedlinen
+      margin-right: 15px
+
+
+@media (max-width: $breakpoint-lg)
+  .hero
+    height: 523px
+
+    &-body
+      display: grid
+      grid-template: 50% 50% / repeat(2, 1fr)
+
+    &-caramell
+      grid-column: 1 / 1
+      order: 0
+      background-image: url("../../images/baby-600.png")
+    &-ware
+      background-image: url("../../images/ware-600.png")
+      margin-right: initial
+      background-position-x: left
+
+    &-bedlinen
+      background-image: url("../../images/bedlinen-600.png")
+      margin-right: initial
+      background-position-x: right
+      background-position-y: top
+
+    &-toyboxes
+      order: initial
+      grid-column: initial
+      grid-row: initial
+      background-image: url("../../images/toyboxes-600.png")
+      background-position-y: bottom
+      margin-right: initial
+      margin-left: initial
+
+@media (max-width: $breakpoint-sm)
+  .hero
+    height: initial
+
+    &-body
+      display: flex
+      flex-direction: column
+
+    &-tile
+      width: 290px
+      height: 254px
+      margin-bottom: 15px
+      //margin: initial
+      //margin: auto
+
+    &-caramell, &-ware, &-bedlinen, &-toyboxes
+      margin-left: auto
+      margin-right: auto
