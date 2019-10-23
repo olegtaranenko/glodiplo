@@ -1,4 +1,27 @@
 .sale
-  border: 1px solid blueviolet
-  height: 412px
-  margin-top: 93px
+  //border: 1px solid blueviolet
+  height: 505px
+  &__title
+    margin-top: 53px
+    margin-bottom: 30px
+  &-cards
+    display: flex
+    justify-content: space-between
+
+.card
+  &__article, &__title
+    display: block
+  &-price
+    &__block
+      display: flex
+
+  &-cart
+    &__image
+      background-color: $main-color
+
+
+@media (max-width: $breakpoint-lg)
+  .sale
+    &-cards
+      flex-wrap: wrap
+

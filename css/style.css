@@ -1,31 +1,115 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Museo Sans Reg";
-  src: url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
-  src: local("MuseoSansCyrl-300"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff2") format("woff2");
+  font-family: "Open Sans Light";
+  src: url("../../fonts/subset-OpenSans-Light.eot");
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../../fonts/subset-OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-OpenSans-Light.woff2") format("woff2"), url("../../fonts/subset-OpenSans-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: "Museo Sans Reg 100";
-  src: url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-100.eot");
-  src: local("MuseoSansCyrl-100"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-100.eot?#iefix") format("embedded-opentype"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-100.woff") format("woff"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff2") format("woff2");
-  font-weight: 100;
+  font-family: "Open Sans Light Italic";
+  src: url("../../fonts/subset-OpenSansLight-Italic.eot");
+  src: local("Open Sans Light Italic"), local("OpenSansLight-Italic"), url("../../fonts/subset-OpenSansLight-Italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-OpenSansLight-Italic.woff2") format("woff2"), url("../../fonts/subset-OpenSansLight-Italic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans.eot");
+  src: local("Open Sans"), local("OpenSans"), url("../../fonts/subset-OpenSans.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-OpenSans.woff2") format("woff2"), url("../../fonts/subset-OpenSans.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Museo Sans Reg 500";
-  src: url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-500.eot");
-  src: local("MuseoSansCyrl-500"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-500.woff") format("woff"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff2") format("woff2");
-  font-weight: 500;
+  font-family: "Open Sans Italic";
+  src: url("../../fonts/subset-OpenSans-Italic.eot");
+  src: local("Open Sans Italic"), local("OpenSans-Italic"), url("../../fonts/subset-OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-OpenSans-Italic.woff2") format("woff2"), url("../../fonts/subset-OpenSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../../fonts/subset-OpenSans-Bold.eot");
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../../fonts/subset-OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-OpenSans-Bold.woff2") format("woff2"), url("../../fonts/subset-OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: "Museo Sans Bold";
-  src: url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
-  src: local("MuseoSansCyrl-700"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff2") format("woff2");
-  font-weight: 700;
+  font-family: "Open Sans Bold Italic";
+  src: url("../../fonts/subset-OpenSans-BoldItalic.eot");
+  src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url("../../fonts/subset-OpenSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-OpenSans-BoldItalic.woff2") format("woff2"), url("../../fonts/subset-OpenSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sans Semibold";
+  src: url("../../fonts/subset-OpenSans-Semibold.eot");
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url("../../fonts/subset-OpenSans-Semibold.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-OpenSans-Semibold.woff2") format("woff2"), url("../../fonts/subset-OpenSans-Semibold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans Semibold Italic";
+  src: url("../../fonts/subset-OpenSans-SemiboldItalic.eot");
+  src: local("Open Sans Semibold Italic"), local("OpenSans-SemiboldItalic"), url("../../fonts/subset-OpenSans-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-OpenSans-SemiboldItalic.woff2") format("woff2"), url("../../fonts/subset-OpenSans-SemiboldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sans Extrabold";
+  src: url("../../fonts/subset-OpenSans-Extrabold.eot");
+  src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url("../../fonts/subset-OpenSans-Extrabold.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-OpenSans-Extrabold.woff2") format("woff2"), url("../../fonts/subset-OpenSans-Extrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans Extrabold Italic";
+  src: url("../../fonts/subset-OpenSans-ExtraboldItalic.eot");
+  src: local("Open Sans Extrabold Italic"), local("OpenSans-ExtraboldItalic"), url("../../fonts/subset-OpenSans-ExtraboldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-OpenSans-ExtraboldItalic.woff2") format("woff2"), url("../../fonts/subset-OpenSans-ExtraboldItalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto Condensed Light";
+  src: url("../../fonts/subset-RobotoCondensed-Light.eot");
+  src: local("Roboto Condensed Light"), local("RobotoCondensed-Light"), url("../../fonts/subset-RobotoCondensed-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-RobotoCondensed-Light.woff2") format("woff2"), url("../../fonts/subset-RobotoCondensed-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Condensed Light Italic";
+  src: url("../../fonts/subset-RobotoCondensed-LightItalic.eot");
+  src: local("Roboto Condensed Light Italic"), local("RobotoCondensed-LightItalic"), url("../../fonts/subset-RobotoCondensed-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-RobotoCondensed-LightItalic.woff2") format("woff2"), url("../../fonts/subset-RobotoCondensed-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto Condensed Regular";
+  src: url("../../fonts/subset-RobotoCondensed-Regular.eot");
+  src: local("Roboto Condensed Regular"), local("RobotoCondensed-Regular"), url("../../fonts/subset-RobotoCondensed-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-RobotoCondensed-Regular.woff2") format("woff2"), url("../../fonts/subset-RobotoCondensed-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Condensed Italic";
+  src: url("../../fonts/subset-RobotoCondensed-Italic.eot");
+  src: local("Roboto Condensed Italic"), local("RobotoCondensed-Italic"), url("../../fonts/subset-RobotoCondensed-Italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-RobotoCondensed-Italic.woff2") format("woff2"), url("../../fonts/subset-RobotoCondensed-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto Condensed Bold";
+  src: url("../../fonts/subset-RobotoCondensed-Bold.eot");
+  src: local("Roboto Condensed Bold"), local("RobotoCondensed-Bold"), url("../../fonts/subset-RobotoCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-RobotoCondensed-Bold.woff2") format("woff2"), url("../../fonts/subset-RobotoCondensed-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Condensed Bold Italic";
+  src: url("../../fonts/subset-RobotoCondensed-BoldItalic.eot");
+  src: local("Roboto Condensed Bold Italic"), local("RobotoCondensed-BoldItalic"), url("../../fonts/subset-RobotoCondensed-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-RobotoCondensed-BoldItalic.woff2") format("woff2"), url("../../fonts/subset-RobotoCondensed-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
 }
 * {
   box-sizing: border-box;
@@ -38,18 +122,13 @@
   }
 }
 body {
-  font-family: "Museo Sans Reg", sans-serif;
-  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
   color: #393939;
 }
 
 img {
   max-width: 100%;
-}
-
-.container {
-  width: 1140px;
-  margin: auto;
 }
 
 /* Настройка тостера */
@@ -60,38 +139,46 @@ img {
   line-height: 1.25;
 }
 
-.button {
-  font-family: "Museo Sans Bold", sans-serif;
-  font-weight: 700;
-  border-radius: 10px;
-  background-color: #00b5ee;
-  border: none;
-  padding: 18px 30px;
+a {
+  text-decoration: none;
+  color: #393939;
 }
-.button:focus {
+
+.glo-container {
+  width: 1140px;
+  margin: auto;
+}
+.glo-button {
+  border-radius: 18px;
+  background-color: #ffffff;
+  color: #00b5ee;
+  border: 1px #00b5ee solid;
+  padding: 12px 24px;
+  font-size: 11px;
+}
+.glo-button:focus {
   outline: 0;
 }
 
 .section-title {
-  font-size: 30px;
-  line-height: 45px;
-  font-family: "Museo Sans Bold", sans-serif;
-  font-weight: 700;
+  font-size: 26px;
+  line-height: 21px;
+  font-family: "Open Sans Semibold", sans-serif;
+  font-weight: 600;
   text-align: center;
-  max-width: 700px;
   margin: auto;
-  color: #000000;
+  color: #393939;
 }
 .section-subtitle {
-  font-family: "Museo Sans Reg 100", sans-serif;
-  font-weight: 100;
+  font-family: "Open Sans Light", sans-serif;
+  font-weight: 300;
   display: block;
   font-size: 20px;
   color: #000000;
 }
 
 .input {
-  border: 1px solid #f5f5f5;
+  border: 1px solid #e5f7fd;
   border-radius: 10px;
   padding: 20px 26px;
   font-size: 15px;
@@ -108,8 +195,8 @@ img {
 }
 
 .phone {
-  font-family: "Museo Sans Bold", sans-serif;
-  font-weight: 700;
+  font-family: "Open Sans Bold", sans-serif;
+  font-weight: bold;
   display: inline-block;
   text-decoration: none;
   color: #393939;
@@ -130,43 +217,154 @@ img {
 }
 
 @media (max-width: 1200px) {
-  .container {
+  .glo-container {
     width: 960px;
   }
 }
 @media (max-width: 992px) {
-  .container {
+  .glo-container {
     width: 595px;
   }
 }
 @media (max-width: 646px) {
-  .container {
+  .glo-container {
     width: 476px;
   }
 }
 @media (max-width: 520px) {
-  .container {
+  .glo-container {
     width: 380px;
   }
 }
 @media (max-width: 396px) {
-  .container {
+  .glo-container {
     width: 320px;
   }
 }
 .header {
-  border: 1px solid red;
   height: 117px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-place {
+  display: flex;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+}
+.header-left__image img {
+  text-align: center;
+}
+.header-left__phones {
+  margin-left: 14px;
+}
+.header-left__phone {
+  display: block;
+}
+.header-left__button {
+  margin-left: 20px;
+}
+.header-center {
+  margin-left: -72px;
+}
+.header-right {
+  padding-right: 7px;
+}
+.header-right__links {
+  display: flex;
+  align-items: center;
 }
 
+.entry-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 32px;
+  height: 50px;
+}
+.entry-link__image {
+  height: 30px;
+  text-align: center;
+}
+.entry-link__text {
+  font-family: "Open Sans Semibold", sans-serif;
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+@media (max-width: 992px) {
+  .header {
+    height: 80px;
+  }
+  .header-left {
+    display: none;
+  }
+  .header-center {
+    margin-left: initial;
+  }
+  .header-center img {
+    width: 115px;
+  }
+
+  .entry-link {
+    height: 24px;
+    margin-left: 16px;
+  }
+  .entry-link__text {
+    display: none;
+  }
+  .entry-link__image img {
+    height: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .header-center {
+    margin-left: 15px;
+  }
+  .header-center img {
+    width: 108px;
+  }
+  .header-right {
+    margin-right: 15px;
+  }
+}
 .navbar {
   border: 1px solid yellowgreen;
   height: 65px;
+  background-color: #00b5ee;
+  color: #ffffff;
 }
 
+@media (max-width: 320px) {
+  .navbar {
+    height: 46px;
+  }
+}
 .hero {
   height: 655px;
   margin-top: 20px;
+}
+.hero-tile {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+}
+.hero-tile__description {
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .hero-body {
   display: grid;
@@ -175,21 +373,31 @@ img {
 .hero-caramell {
   grid-column: 1/span 2;
   order: -2;
-  background: url("../../images/baby.png") no-repeat top left;
+  background: url("../../images/hero/baby.png") no-repeat top right;
+  margin-right: -5px;
+}
+.hero-caramell .hero-tile__description {
+  bottom: 10px;
 }
 .hero-ware {
-  background: url("../../images/ware.png") no-repeat bottom right;
+  margin-right: -5px;
+  background: url("../../images/hero/ware.png") no-repeat bottom right;
+}
+.hero-ware .hero-tile__description {
+  paddin-left: 5px;
 }
 .hero-bedlinen {
-  background: url("../../images/bedlinen.png") no-repeat bottom left;
-  margin-right: 10px;
+  background: url("../../images/hero/bedlinen.png") no-repeat bottom right;
+  margin-right: 5px;
 }
 .hero-toyboxes {
   order: -1;
   grid-column: 3/span 1;
   grid-row: 1/span 2;
-  background: url("../../images/toyboxes.png") no-repeat top right;
-  margin-right: 5px;
+  background: url("../../images/hero/toyboxes.png") no-repeat top right;
+}
+.hero-toyboxes .hero-tile__description {
+  padding-left: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -210,18 +418,26 @@ img {
     display: grid;
     grid-template: 50% 50%/repeat(2, 1fr);
   }
+  .hero-tile__description {
+    height: 59px;
+    font-size: 16px;
+  }
   .hero-caramell {
     grid-column: 1/1;
     order: 0;
-    background-image: url("../../images/baby-600.png");
+    background-image: url("../../images/hero/baby-600.png");
+    margin-right: 10px;
+  }
+  .hero .hero-tile__description {
+    bottom: 0;
   }
   .hero-ware {
-    background-image: url("../../images/ware-600.png");
+    background-image: url("../../images/hero/ware-600.png");
     margin-right: initial;
     background-position-x: left;
   }
   .hero-bedlinen {
-    background-image: url("../../images/bedlinen-600.png");
+    background-image: url("../../images/hero/bedlinen-600.png");
     margin-right: initial;
     background-position-x: right;
     background-position-y: top;
@@ -230,7 +446,7 @@ img {
     order: initial;
     grid-column: initial;
     grid-row: initial;
-    background-image: url("../../images/toyboxes-600.png");
+    background-image: url("../../images/hero/toyboxes-600.png");
     background-position-y: bottom;
     margin-right: initial;
     margin-left: initial;
@@ -247,19 +463,44 @@ img {
   .hero-tile {
     width: 290px;
     height: 254px;
-    margin-bottom: 15px;
   }
   .hero-caramell, .hero-ware, .hero-bedlinen, .hero-toyboxes {
     margin-left: auto;
     margin-right: auto;
   }
 }
+@media (max-width: 320px) {
+  .hero-ware, .hero-bedlinen, .hero-toyboxes {
+    margin-top: 15px;
+  }
+}
 .sale {
-  border: 1px solid blueviolet;
-  height: 412px;
-  margin-top: 93px;
+  height: 505px;
+}
+.sale__title {
+  margin-top: 53px;
+  margin-bottom: 30px;
+}
+.sale-cards {
+  display: flex;
+  justify-content: space-between;
 }
 
+.card__article, .card__title {
+  display: block;
+}
+.card-price__block {
+  display: flex;
+}
+.card-cart__image {
+  background-color: #00b5ee;
+}
+
+@media (max-width: 992px) {
+  .sale-cards {
+    flex-wrap: wrap;
+  }
+}
 .subscribe {
   border: 1px solid blueviolet;
   height: 287px;
@@ -340,8 +581,8 @@ img {
   width: 100%;
 }
 .dialog-title {
-  font-family: "Museo Sans Bold", sans-serif;
-  font-weight: 700;
+  font-family: "Open Sans Bold", sans-serif;
+  font-weight: bold;
   margin-top: 0;
   text-align: center;
   font-size: 22px;

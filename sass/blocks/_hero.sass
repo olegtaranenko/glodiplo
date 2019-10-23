@@ -2,6 +2,22 @@
   //border: 1px solid blueviolet
   height: 655px
   margin-top: 20px
+  &-tile
+    position: relative
+    +opensans-reg
+    //line-height: 22px
+    &__description
+      font-size: 22px
+      display: flex
+      justify-content:  center
+      align-items: center
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      height: 75px
+      text-align: center
+      background-color: rgba(255, 255, 255, 0.8)
   &-body
     display: grid
     grid-template: 50% 50% / repeat(3, 1fr)
@@ -12,22 +28,29 @@
   &-caramell
     grid-column: 1 / span 2
     order: -2
-    background: url("../../images/baby.png") no-repeat top left
+    background: url("../../images/hero/baby.png") no-repeat top right
+    margin-right: -5px
+    .hero-tile__description
+      bottom: 10px
 
   &-ware
-    background: url("../../images/ware.png") no-repeat bottom right
+    margin-right: -5px
+    background: url("../../images/hero/ware.png") no-repeat bottom right
+    .hero-tile__description
+      paddin-left: 5px
 
   &-bedlinen
-    background: url("../../images/bedlinen.png") no-repeat bottom left
+    background: url("../../images/hero/bedlinen.png") no-repeat bottom right
     //padding-right: 5px
-    margin-right: 10px
+    margin-right: 5px
 
   &-toyboxes
     order: -1
     grid-column: 3 / span 1
     grid-row: 1 / span 2
-    background: url("../../images/toyboxes.png") no-repeat top right
-    margin-right: 5px
+    background: url("../../images/hero/toyboxes.png") no-repeat top right
+    .hero-tile__description
+      padding-left: 15px
 
 
 @media (max-width: $breakpoint-xl)
@@ -48,17 +71,25 @@
       display: grid
       grid-template: 50% 50% / repeat(2, 1fr)
 
+    &-tile
+      &__description
+        height: 59px
+        font-size: 16px
     &-caramell
       grid-column: 1 / 1
       order: 0
-      background-image: url("../../images/baby-600.png")
+      background-image: url("../../images/hero/baby-600.png")
+      margin-right: 10px
+    .hero-tile__description
+      bottom: 0
+
     &-ware
-      background-image: url("../../images/ware-600.png")
+      background-image: url("../../images/hero/ware-600.png")
       margin-right: initial
       background-position-x: left
 
     &-bedlinen
-      background-image: url("../../images/bedlinen-600.png")
+      background-image: url("../../images/hero/bedlinen-600.png")
       margin-right: initial
       background-position-x: right
       background-position-y: top
@@ -67,7 +98,7 @@
       order: initial
       grid-column: initial
       grid-row: initial
-      background-image: url("../../images/toyboxes-600.png")
+      background-image: url("../../images/hero/toyboxes-600.png")
       background-position-y: bottom
       margin-right: initial
       margin-left: initial
@@ -83,10 +114,16 @@
     &-tile
       width: 290px
       height: 254px
-      margin-bottom: 15px
-      //margin: initial
+      //padding-bottom: 15px
+
+    //margin: initial
       //margin: auto
 
     &-caramell, &-ware, &-bedlinen, &-toyboxes
       margin-left: auto
       margin-right: auto
+
+@media (max-width: $breakpoint-3xs)
+  .hero
+    &-ware, &-bedlinen, &-toyboxes
+      margin-top: 15px

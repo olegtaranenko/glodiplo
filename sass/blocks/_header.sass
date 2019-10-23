@@ -1,3 +1,70 @@
 .header
-  border: 1px solid red
   height: 117px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &-place
+    display: flex
+  &-left
+    display: flex
+    align-items: center
+    &__image
+      img
+        text-align: center
+    &__phones
+      margin-left: 14px
+    &__phone
+      display: block
+
+    &__button
+      margin-left: 20px
+  &-center
+    margin-left: -72px
+  &-right
+    padding-right: 7px
+    &__links
+      display: flex
+      align-items: center
+
+.entry-link
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  margin-left: 32px
+  height: 50px
+  &__image
+    height: 30px
+    text-align: center
+
+  &__text
+    +opensans-semibold
+    line-height: 20px
+    font-size: 12px
+    margin-top: 4px
+
+
+@media (max-width: $breakpoint-lg)
+  .header
+    height: 80px
+    &-left
+      display: none
+    &-center
+      margin-left: initial
+      img
+        width: 115px
+  .entry-link
+    height: 24px
+    margin-left: 16px
+    &__text
+      display: none
+    &__image img
+      height: 20px
+
+@media (max-width: $breakpoint-3xs)
+  .header
+    &-center
+      margin-left: 15px
+      img
+        width: 108px
+    &-right
+      margin-right: 15px
