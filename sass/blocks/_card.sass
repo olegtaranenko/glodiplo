@@ -1,0 +1,84 @@
+$card-discount-icon-ml: -111px
+$card-new-icon-mt: -350px
+$card-new-icon-shifted-mt: $card-new-icon-mt + 45px
+$card-discount-icon-mt: 16px
+
+.card
+  width: 263px
+  height: 386px
+  border: 1px solid $card-border-color
+  text-align: center
+  position: relative
+
+  &-discount
+    &:before
+      position: absolute
+      content: ''
+      height: 42px
+      width: 42px
+      background: url("../../images/card/sale-percent-icon.png") no-repeat center center
+      background-color: #88b14b
+      border-radius: 50%
+      margin-left: $card-discount-icon-ml
+      margin-top: $card-discount-icon-mt
+
+  &-new
+    &:after
+      +opensans-semibold
+      position: absolute
+      content: 'new'
+      text-transform: uppercase
+      height: 42px
+      width: 42px
+      background-color: #fff8c7
+      font-size: 10px
+      line-height: 42px
+      color: #da7566
+      border-radius: 50%
+      margin-left: $card-discount-icon-ml
+      margin-top: $card-new-icon-mt
+    &_shifted
+      &:after
+        margin-top: $card-new-icon-shifted-mt
+
+
+  &__image
+    height: 240px
+    text-align: center
+  &__article, &__title
+    display: block
+  &__title
+    margin-top: 25px
+    font-size: 16px
+    +opensans-semibold
+
+  &__article
+    +opensans-light
+    font-size: 13px
+    line-height: 16px
+    margin-top: 10px
+
+  &-price
+    &__block
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 20px 17px 0 20px
+  &__hrivna
+    +arialmt
+
+  &-cart
+    &__image
+      width: 57px
+      height: 37px
+      border-radius: 18px
+      background-color: $main-color
+      display: flex
+      justify-content: center
+      align-items: center
+
+@media (max-width: $breakpoint-xl)
+  .card
+    width: 224px
+    text-align: center
+

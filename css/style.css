@@ -1,5 +1,12 @@
 @charset "UTF-8";
 @font-face {
+  font-family: "Arial MT";
+  src: url("../../fonts/subset-ArialMT.eot");
+  src: local("Arial MT"), local("ArialMT"), url("../../fonts/subset-ArialMT.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-ArialMT.woff2") format("woff2"), url("../../fonts/subset-ArialMT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "Open Sans Light";
   src: url("../../fonts/subset-OpenSans-Light.eot");
   src: local("Open Sans Light"), local("OpenSans-Light"), url("../../fonts/subset-OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/subset-OpenSans-Light.woff2") format("woff2"), url("../../fonts/subset-OpenSans-Light.woff") format("woff");
@@ -474,26 +481,99 @@ a {
     margin-top: 15px;
   }
 }
+.card {
+  width: 263px;
+  height: 386px;
+  border: 1px solid #e8e8e8;
+  text-align: center;
+  position: relative;
+}
+.card-discount:before {
+  position: absolute;
+  content: "";
+  height: 42px;
+  width: 42px;
+  background: url("../../images/card/sale-percent-icon.png") no-repeat center center;
+  background-color: #88b14b;
+  border-radius: 50%;
+  margin-left: -111px;
+  margin-top: 16px;
+}
+.card-new:after {
+  font-family: "Open Sans Semibold", sans-serif;
+  font-weight: 600;
+  position: absolute;
+  content: "new";
+  text-transform: uppercase;
+  height: 42px;
+  width: 42px;
+  background-color: #fff8c7;
+  font-size: 10px;
+  line-height: 42px;
+  color: #da7566;
+  border-radius: 50%;
+  margin-left: -111px;
+  margin-top: -350px;
+}
+.card-new_shifted:after {
+  margin-top: -305px;
+}
+.card__image {
+  height: 240px;
+  text-align: center;
+}
+.card__article, .card__title {
+  display: block;
+}
+.card__title {
+  margin-top: 25px;
+  font-size: 16px;
+  font-family: "Open Sans Semibold", sans-serif;
+  font-weight: 600;
+}
+.card__article {
+  font-family: "Open Sans Light", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: 10px;
+}
+.card-price__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 17px 0 20px;
+}
+.card__hrivna {
+  font-family: "Arial MT", sans-serif;
+  font-weight: normal;
+}
+.card-cart__image {
+  width: 57px;
+  height: 37px;
+  border-radius: 18px;
+  background-color: #00b5ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: 224px;
+    text-align: center;
+  }
+}
 .sale {
   height: 505px;
 }
 .sale__title {
   margin-top: 53px;
-  margin-bottom: 30px;
+  margin-bottom: 47px;
 }
 .sale-cards {
   display: flex;
   justify-content: space-between;
-}
-
-.card__article, .card__title {
-  display: block;
-}
-.card-price__block {
-  display: flex;
-}
-.card-cart__image {
-  background-color: #00b5ee;
 }
 
 @media (max-width: 992px) {
@@ -504,13 +584,21 @@ a {
 .subscribe {
   border: 1px solid blueviolet;
   height: 287px;
-  margin-top: 54px;
+  margin-top: 3px;
 }
 
 .brandnews {
-  border: 1px solid blueviolet;
   height: 820px;
-  margin-top: 120px;
+  margin-top: 30px;
+}
+.brandnews-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.brandnews .card {
+  margin-bottom: 22px;
 }
 
 .conditions {
