@@ -248,6 +248,27 @@ a {
     width: 320px;
   }
 }
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+.social__bar {
+  width: 100px;
+}
+.social-link {
+  width: 31px;
+  height: 31px;
+  border-radius: 3px;
+  border: 1px solid #393939;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-link img {
+  height: 16px;
+  width: 16px;
+}
+
 .header {
   height: 117px;
   display: flex;
@@ -588,7 +609,6 @@ a {
 }
 
 .brandnews {
-  height: 820px;
   margin-top: 30px;
 }
 .brandnews-cards {
@@ -604,13 +624,20 @@ a {
 .conditions {
   border: 1px solid blueviolet;
   height: 106px;
-  margin-top: 54px;
+  margin-top: 28px;
 }
 
 .footer {
-  border: 1px solid green;
   height: 382px;
   margin-top: 50px;
+}
+.footer-blocks {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 25%;
+}
+.footer__social {
+  text-align: center;
 }
 
 .modal {
