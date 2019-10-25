@@ -141,7 +141,7 @@ img {
 /* Настройка тостера */
 .jq-toast-single {
   padding: 30px 0;
-  background-color: #00c5ee;
+  background-color: #e5f7fd;
   font-size: 22px;
   line-height: 1.25;
 }
@@ -162,6 +162,10 @@ a {
   border: 1px #00b5ee solid;
   padding: 12px 24px;
   font-size: 11px;
+}
+.glo-button_inverse {
+  background-color: #00b5ee;
+  color: #ffffff;
 }
 .glo-button:focus {
   outline: 0;
@@ -227,6 +231,11 @@ a {
   .glo-container {
     width: 960px;
   }
+
+  .section-title {
+    font-size: 22px;
+    line-height: 21px;
+  }
 }
 @media (max-width: 992px) {
   .glo-container {
@@ -253,7 +262,7 @@ a {
   justify-content: space-between;
 }
 .social__bar {
-  width: 100px;
+  text-align: center;
 }
 .social-link {
   width: 31px;
@@ -497,7 +506,7 @@ a {
     margin-right: auto;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 646px) {
   .hero-ware, .hero-bedlinen, .hero-toyboxes {
     margin-top: 15px;
   }
@@ -585,6 +594,11 @@ a {
     text-align: center;
   }
 }
+@media (max-width: 992px) {
+  .card {
+    width: 263px;
+  }
+}
 .sale {
   height: 505px;
 }
@@ -600,6 +614,10 @@ a {
 @media (max-width: 992px) {
   .sale-cards {
     flex-wrap: wrap;
+  }
+  .sale__title {
+    margin-top: 35px;
+    margin-bottom: 35px;
   }
 }
 .subscribe {
@@ -630,6 +648,28 @@ a {
 .footer {
   height: 382px;
   margin-top: 50px;
+  background-color: #e5f7fd;
+}
+.footer__section {
+  padding-top: 36px;
+}
+.footer-block:nth-child(2) {
+  margin-left: -1px;
+}
+.footer-block:nth-child(3) {
+  margin-left: -85px;
+}
+.footer-block:nth-child(4) .footer-block__title {
+  margin-left: 3px;
+}
+.footer-block__title {
+  font-family: "Open Sans Bold", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 12px;
+}
+.footer-block__title_post {
+  margin-top: 27px;
 }
 .footer-blocks {
   display: flex;
@@ -637,7 +677,46 @@ a {
   flex-basis: 25%;
 }
 .footer__social {
-  text-align: center;
+  width: 120px;
+  margin-top: 17px;
+  margin-left: 2px;
+}
+.footer__button {
+  display: block;
+  margin-top: 15px;
+  font-size: 12px;
+}
+.footer__link {
+  margin-top: 13px;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+.footer__links {
+  padding: 0;
+  list-style: none;
+}
+.footer__links li {
+  font-family: "Open Sans Light", sans-serif;
+  font-weight: 300;
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.footer__phone {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+.footer-ilikeit {
+  font-family: "Open Sans Semibold", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: -31px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 1px solid red;
 }
 
 .modal {

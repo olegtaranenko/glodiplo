@@ -1,10 +1,59 @@
 .footer
-  //border: 1px solid green
   height: 382px
   margin-top: 50px
-  &-blocks
-    display: flex
-    justify-content: space-between
-    flex-basis: 25%
+  background-color: $main-color-variation
+  &__section
+    padding-top: 36px
+  &-block
+    &:nth-child(2)
+      margin-left: -1px
+    &:nth-child(3)
+      margin-left: -85px
+    &:nth-child(4)
+      .footer-block__title
+        margin-left: 3px
+    &__title
+      +opensans-bold
+      font-size: 14px
+      line-height: 12px
+      &_post
+        margin-top: 27px
+    &s
+      //border: 1px solid green
+      display: flex
+      justify-content: space-between
+      flex-basis: 25%
   &__social
-    text-align: center
+    width: 120px
+    margin-top: 17px
+    margin-left: 2px
+
+  &__button
+    display: block
+    margin-top: 15px
+    font-size: 12px
+
+  &__link
+    margin-top: 13px
+    font-size: 14px
+    text-transform: uppercase
+    line-height: 18px
+    &s
+      padding: 0
+      list-style: none
+      li
+        +opensans-light
+        margin-top: 5px
+        font-size: 14px
+        line-height: 20px
+  &__phone
+    +opensans-reg
+    font-size: 16px
+  &-ilikeit
+    +opensans-semibold
+    font-size: 14px
+    margin-left: -31px
+    margin-top: 20px
+    padding: 10px 20px
+    background-color: #ffffff
+    border: 1px solid red

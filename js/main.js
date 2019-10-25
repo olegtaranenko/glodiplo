@@ -1,6 +1,15 @@
 const minLifetime = 1500;
 const maxLifetime = 5000;
 
+const breakpoint_xl = 1200;
+const breakpoint_lg = 992;
+const breakpoint_md = 768;
+const breakpoint_sm = 646;
+const breakpoint_xs = 520;
+const breakpoint_2xs = 396;
+const breakpoint_3xs = 320;
+
+
 /**
  * производим все действия только после того, как структура документа будет полностью готова
  */
@@ -132,36 +141,7 @@ $(document).ready(function () {
     }
   }
 
-
   // Маска для телефона
   $('input[name=phone]').mask('8 (999) 999-99-99');
 
-  /* Скрипт слайдера */
-  const options = {
-    items: 3,
-    margin: 30,
-    loop: true,
-    nav: true,
-    dots: false,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      1200: {
-        items: 3
-      }
-    },
-    navText: [
-      `<div><img src="../images/key/left-arrow.png" alt="Стрелка влево"></div>`,
-      `<div><img src="../images/key/right-arrow.png" alt="Стрелка вправо"></div>`
-    ]
-  };
-
-  $('.portfolio-items').owlCarousel(options);
-
-})
-;
-
+});

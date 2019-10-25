@@ -9,10 +9,9 @@
 
   <!-- htmlbuild:css -->
   <link rel="stylesheet" href="../vendor/css/normalize.css">
-  <link rel="stylesheet" href="../vendor/css/owl.carousel.css">
   <link rel="stylesheet" href="../vendor/css/animate.css">
   <link rel="stylesheet" href="../vendor/css/jquery.toast.min.css">
-  <link rel="stylesheet" href="../vendor/css/tiny-slider.css">
+  <link rel="stylesheet" href="../vendor/css/swiper.css">
   <link rel="stylesheet" href="./css/style.css">
   <!-- endbuild -->
 
@@ -86,55 +85,11 @@
   <div class="glo-container">
     <section class="section sale sale__section">
       <h2 class="section-title sale__title">Распродажа</h2>
-      <div class="sale-cards my-slider">
-        <div class="card card-discount">
-          <div class="card__image">
-            <img src="../images/card/guess.jpg" alt="Распродажа">
-          </div>
-          <span class="card__title">Guess Платье</span> <span class="card__article">Артикул: 32 987</span>
-          <div class="card-price__block">
-            <span class="card-price">Цена: <span class="card__hrivna">₴</span> 1 870.00</span>
-            <div class="card-cart__image">
-              <img src="../images/card/card-cart-icon.png" alt="Добавить в корзину">
-            </div>
-          </div>
-        </div>
-        <div class="card card-discount">
-          <div class="card__image">
-            <img src="../images/card/nameit.jpg" alt="Распродажа">
-          </div>
-          <span class="card__title">Name It Олимпийка</span> <span class="card__article">Артикул: 32 987</span>
-          <div class="card-price__block">
-            <span class="card-price">Цена: <span class="card__hrivna">₴</span> 840.00</span>
-            <div class="card-cart__image">
-              <img src="../images/card/card-cart-icon.png" alt="Добавить в корзину">
-            </div>
-          </div>
-        </div>
-        <div class="card card-discount card-new card-new_shifted">
-          <div class="card__image">
-            <img src="../images/card/sisib.jpg" alt="Распродажа">
-          </div>
-          <span class="card__title">Лонгслив - SISIB</span> <span class="card__article">Артикул: 32 987</span>
-          <div class="card-price__block">
-            <span class="card-price">Цена: <span class="card__hrivna">₴</span> 549.00</span>
-            <a class="card-cart__image">
-              <img src="../images/card/card-cart-icon.png" alt="Добавить в корзину">
-            </a>
-          </div>
-        </div>
-        <div class="card card-discount">
-          <div class="card__image">
-            <img src="../images/card/grizzly.jpg" alt="Распродажа">
-          </div>
-          <span class="card__title">Рюкзак Grizzly</span> <span class="card__article">Артикул: 32 987</span>
-          <div class="card-price__block">
-            <span class="card-price">Цена: <span class="card__hrivna">₴</span> 1 890.00</span>
-            <div class="card-cart__image">
-              <img src="../images/card/card-cart-icon.png" alt="Добавить в корзину">
-            </div>
-          </div>
-        </div>
+      <div class="sale-cards"></div>
+      <div class="sale-slider swiper-container">
+        <div class="sale-wrapper swiper-wrapper"></div>
+        <div class="sale-nav-button swiper-button-prev"></div>
+        <div class="sale-nav-button swiper-button-next"></div>
       </div>
     </section>
   </div>
@@ -147,67 +102,16 @@
   <!-- /.subscribe -->
 
   <div class="glo-container">
-    <h2 class="section-title sale__title">Новинки</h2>
+    <h2 class="section-title brandnews__title">Новинки</h2>
     <section class="brandnews">
-      <!--    .brandnews-cards>.card*8>(.card__image>img[src=../images/card/$.jpg][alt="Распродажа $"])+span.card__title+span.card__article+.card-price__block>(span.card-price+.card-cart__image>img[src=../images/card/cart.png][alt="Добавить в корзину"])-->
-      <div class="brandnews-cards">
-        <div  class="card card-new">
-          <div class="card__image"><img src="../images/card/boboli.jpg" alt="Распродажа 1"></div>
-          <span class="card__title">Boboli Лонгслив</span><span class="card__article">Артикул: 32 987</span>
-          <div class="card-price__block"><span class="card-price">Цена: <span class="card__hrivna">₴</span> 920.00</span>
-            <div class="card-cart__image"><img src="../images/card/card-cart-icon.png" alt="Добавить в корзину"></div>
-          </div>
-        </div>
-        <div  class="card card-new">
-          <div class="card__image"><img src="../images/card/chicago.jpg" alt="Распродажа 2"></div>
-          <span class="card__title">Name It Лонгслив</span><span class="card__article">Артикул: 32 987</span>
-          <div class="card-price__block"><span class="card-price">Цена: <span class="card__hrivna">₴</span> 660.00</span>
-            <div class="card-cart__image"><img src="../images/card/card-cart-icon.png" alt="Добавить в корзину"></div>
-          </div>
-        </div>
-        <div  class="card card-new">
-          <div class="card__image"><img src="../images/card/puma-top.jpg" alt="Распродажа 3"></div>
-          <span class="card__title">PUMA Топ спортивный</span><span class="card__article">Артикул: 32 987</span>
-          <div class="card-price__block"><span class="card-price">Цена: <span class="card__hrivna">₴</span> 990.00</span>
-            <div class="card-cart__image"><img src="../images/card/card-cart-icon.png" alt="Добавить в корзину"></div>
-          </div>
-        </div>
-        <div  class="card card-new">
-          <div class="card__image"><img src="../images/card/ea7.jpg" alt="Распродажа 4"></div>
-          <span class="card__title">EA7 Куртка утепленная</span><span class="card__article"> Артикул: 32 987</span>
-          <div class="card-price__block"><span class="card-price">Цена: <span class="card__hrivna">₴</span> 549.00</span>
-            <div class="card-cart__image"><img src="../images/card/card-cart-icon.png" alt="Добавить в корзину"></div>
-          </div>
-        </div>
-        <div  class="card card-new">
-          <div class="card__image"><img src="../images/card/brums.jpg" alt="Распродажа 5"></div>
-          <span class="card__title">Brums Костюм спортивный</span><span class="card__article"> Артикул: 32 987</span>
-          <div class="card-price__block"><span class="card-price">Цена: <span class="card__hrivna">₴</span> 1 720.00</span>
-            <div class="card-cart__image"><img src="../images/card/card-cart-icon.png" alt="Добавить в корзину"></div>
-          </div>
-        </div>
-        <div  class="card card-new">
-          <div class="card__image"><img src="../images/card/piazza-sweet.jpg" alt="Распродажа 6"></div>
-          <span class="card__title">Piazza Italia Свитшоты</span><span class="card__article"> Артикул: 32 987</span>
-          <div class="card-price__block"><span class="card-price">Цена: <span class="card__hrivna">₴</span> 500.00</span>
-            <div class="card-cart__image"><img src="../images/card/card-cart-icon.png" alt="Добавить в корзину"></div>
-          </div>
-        </div>
-        <div  class="card card-new">
-          <div class="card__image"><img src="../images/card/peazza-long.jpg" alt="Распродажа 7"></div>
-          <span class="card__title">Piazza Italia Лонгсливы</span><span class="card__article"> Артикул: 32 987</span>
-          <div class="card-price__block"><span class="card-price">Цена: <span class="card__hrivna">₴</span> 320.00</span>
-            <div class="card-cart__image"><img src="../images/card/card-cart-icon.png" alt="Добавить в корзину"></div>
-          </div>
-        </div>
-        <div  class="card card-new">
-          <div class="card__image"><img src="../images/card/puma-suit.jpg" alt="Распродажа 8"></div>
-          <span class="card__title">PUMA Костюм спортивный</span><span class="card__article"> Артикул: 32 987</span>
-          <div class="card-price__block"><span class="card-price">Цена: <span class="card__hrivna">₴</span> 1 290.00</span>
-            <div class="card-cart__image"><img src="../images/card/card-cart-icon.png" alt="Добавить в корзину"></div>
-          </div>
-        </div>
+      <div class="brandnews-cards"></div>
+      <div class="brandnews-slider swiper-container">
+        <div class="brandnews-wrapper swiper-wrapper"></div>
+        <div class="brandnews-nav-button swiper-button-prev"></div>
+        <div class="brandnews-nav-button swiper-button-next"></div>
       </div>
+
+      <!--    .brandnews-cards>.card*8>(.card__image>img[src=../images/card/$.jpg][alt="Распродажа $"])+span.card__title+span.card__article+.card-price__block>(span.card-price+.card-cart__image>img[src=../images/card/cart.png][alt="Добавить в корзину"])-->
     </section>
   </div>
   <!-- /.brandnews -->
@@ -221,14 +125,14 @@
 
 </main>
 
-<footer class="footer footer-section">
+<footer class="footer footer__section">
   <div class="glo-container">
     <div class="footer-blocks">
       <div class="footer-block">
         <h3 class="footer-block__title">Свяжитесь с нами</h3>
         <div class="footer-block__body footer-block__contacts">
-          <a href="tel:+79871880808" class="footer__item">+7 987 188 08 08</a>
-          <button class="footer__button">Перезвоните мне</button>
+          <a href="tel:+79871880808" class="phone footer__phone">+7 987 188 08 08</a>
+          <button class="glo-button glo-button_inverse footer__button">Перезвоните мне</button>
           <div class="footer__link">БЛОГ</div>
           <div class="footer__link">НОВОСТИ Блога</div>
           <div class="footer__link">ОТЗЫВЫ</div>
@@ -257,7 +161,7 @@
             <li>Избранное</li>
           </ul>
         </div>
-        <h3 class="footer-block__title">Быстрая доставка</h3>
+        <h3 class="footer-block__title footer-block__title_post">Быстрая доставка</h3>
         <div class="footer-block__post"><img src="../images/footer/nova-poshta-logo.png" alt="НОВА ПОШТА"></div>
       </div>
       <div class="footer-block">
@@ -269,6 +173,7 @@
             <a href="#" class="social-link"><img src="../images/footer/instagram-logo.svg" alt="Лого Instagram"></a>
           </div>
         </div>
+        <div class="footer-ilikeit">Мне нравится | 3654</div>
       </div>
     </div>
   </div>
@@ -283,15 +188,14 @@
 
 
 <!-- htmlbuild:js -->
-<script src="../vendor/js/jquery-3.4.1.min.js"></script>
+<script src="../vendor/js/jquery-3.4.1.js"></script>
 <script src="../vendor/js/jquery.balloon.js"></script>
 <script src="../vendor/js/jquery.maskedinput.js"></script>
 <script src="../vendor/js/jquery.validate.js"></script>
 <script src="js/jump.js"></script>
 <script src="../vendor/js/jquery.toast.js"></script>
-<script src="../vendor/js/owl.carousel.js"></script>
 <script src="../vendor/js/wow.min.js"></script>
-<script src="../vendor/js/tiny-slider.js"></script>
+<script src="../vendor/js/swiper.js"></script>
 
 <script src="js/main.js"></script>
 <script src="js/modal.js"></script>
