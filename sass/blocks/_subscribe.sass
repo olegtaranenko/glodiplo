@@ -1,4 +1,39 @@
 .subscribe
-  border: 1px solid blueviolet
+  //border: 1px solid blueviolet
   height: 287px
   margin-top: 3px
+  background: url('../../images/subscribe-bg.jpg') no-repeat center center
+  text-align: center
+  padding-top: 20px
+  &__contacts
+    margin-top: 21px
+  &__email
+    width: 300px
+    font-size: 13px
+  &__button
+    font-size: 13px
+  &__social
+    width: 100px
+    margin: auto
+  &__title
+    text-transform: uppercase
+    font-size: 20px
+  &__subtitle
+    text-transform: uppercase
+    font-size: 14px
+    margin-top: 24px
+  &__followus
+    text-transform: uppercase
+    font-size: 14px
+    margin-top: 27px
+
+@media (max-width: $breakpoint-lg)
+  .subscribe
+    &__title
+      font-size: 16px
+      line-height: 21px
+    &__subtitle
+      margin-top: 34px
+    &__email
+      width: 270px
+      margin-left: -40px

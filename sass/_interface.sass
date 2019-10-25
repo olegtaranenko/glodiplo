@@ -32,18 +32,26 @@ a
 
   &-button
     //+bold
-    border-radius: 18px
+    border-radius: $input-border-radius
     background-color: $text-color-over-main
     color: $main-color
     border: 1px $main-color solid
-    padding: 12px 24px
-    font-size: 11px
+    padding: $input-padding
+    font-size: $input-font-size
     //line-height: 21px
     &_inverse
       background-color: $main-color
       color: $text-color-over-main
     &:focus
       outline: 0
+  //&-email
+  &-input
+    border-radius: $input-border-radius
+    //border: 1px $main-color solid
+    border: none
+    padding: $input-padding
+    font-size: $input-font-size
+
 
 .section
   &-title

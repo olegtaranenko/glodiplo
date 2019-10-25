@@ -76,7 +76,7 @@ $(document).ready(function () {
 
 
             spaceBetween: 30,
-            autoplay: true,
+            // autoplay: true,
             breakpoints: {
               // when window width is >= 320px
               320: {

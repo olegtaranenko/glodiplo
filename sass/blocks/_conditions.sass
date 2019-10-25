@@ -1,4 +1,26 @@
+
 .conditions
-  border: 1px solid blueviolet
-  height: 106px
-  margin-top: 28px
+  //border: 1px solid blueviolet
+  margin-top: 32px
+  border-top: 1px $main-color-variation-2 solid
+  border-bottom: 1px $main-color-variation-2 solid
+  &-body
+    height: 106px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+  &__item
+    //flex-basis: 18%
+    display: flex
+    width: 210px
+  &__image
+    margin-right: 10px
+  &__text
+    font-size: 14px
+    width: 165px
+
+@media (max-width: $breakpoint-lg)
+  .conditions
+    &-body
+      flex-wrap: wrap
