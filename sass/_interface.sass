@@ -29,6 +29,7 @@ a
   &-container
     width: $main-container-width
     margin: auto
+    //border-right: 1px solid #00b5ee
 
   &-button
     //+bold
@@ -52,6 +53,68 @@ a
     padding: $input-padding
     font-size: $input-font-size
 
+  &-select
+    display: block
+    font-size: 12px
+    line-height: $glo-select-height
+    width: 100%
+    max-width: 100%
+    margin: 0
+    border: 1px solid $glo-select-border-color
+    border-radius: 0
+    -moz-appearance: none
+    -webkit-appearance: none
+    appearance: none
+    color: $main-text-color
+    cursor: pointer
+    opacity: 0.6
+    padding-left: 20px
+    //background-color: rgba(0, 0, 0, 0)
+
+    position: relative
+    &:active
+      outline: none
+
+    &:hover
+      border-color: darken($glo-select-border-color, 10%)
+
+    &:focus
+      border-color: darken($glo-select-border-color, 20%)
+      color: darken($glo-select-border-color, 20%)
+      //color: #222
+      outline: none
+
+    &:after
+      content: ''
+      position: absolute
+      height: $glo-select-arrow-height
+      width: $glo-select-arrow-width
+      background: url("../../images/select-arrow-down.png") no-repeat
+      top: $glo-select-arrow-y
+      right: $glo-select-arrow-x
+
+    &_blue
+      &.glo-select:before
+        // not working
+        opacity: 1
+        background-color: $circle-blue-color
+
+    &__circle
+      padding-left: 50px
+      &:before
+        content: ''
+        position: absolute
+        height: 25px
+        width: 25px
+        border-radius: 50%
+        left: 12.5px
+        top: 12.5px
+    &__label
+      font-size: 16px
+      +opensans-semibold
+      line-height: 17px
+    &_vertical-align
+      margin-bottom: 15px
 
 .section
   &-title
@@ -86,6 +149,12 @@ a
   display: inline-block
   text-decoration: none
   color: $main-text-color
+
+.rating
+  display: flex
+
+  img
+    cursor: pointer
 
 .jump-btn
   cursor: pointer
@@ -128,4 +197,8 @@ a
   .glo
     &-container
       width: 320px
+
+
+.select-css::-ms-expand
+  display: none
 
